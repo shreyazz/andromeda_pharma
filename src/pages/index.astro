@@ -1,66 +1,147 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Andromeda Pharma">
 	<div class="relative">
-		<img src="/main.png" alt="main-hero-image" class="h-[90vh] w-full object-cover ">
-		<div class="hero-text absolute top-[46%] translate-y-[-50%] p-10 flex flex-col gap-4">
-			<h1 class="text-4xl w-[45%] text-gray-800 leading-snug">Advancing Health, Enriching Lives. <span class="font-semibold"> Andromeda Pharma </span>, Bringing Affordability to Medicine... <span class="font-semibold"> as life is precious. </span></h1>
-			<p class="text-base text-gray-600 w-[40%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .do eiusmod .do eiusmod.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .do eiusmod .do eiusmod .
+		<img
+			src="/main.png"
+			alt="main-hero-image"
+			class="h-[90vh] w-full object-cover"
+		/>
+		<div
+			class="hero-text absolute top-[46%] translate-y-[-50%] p-10 flex flex-col gap-4"
+		>
+			<h1 class="text-4xl w-[45%] text-gray-800 leading-snug">
+				Advancing Health, Enriching Lives. <span class="font-semibold">
+					Andromeda Pharma
+				</span>, Bringing Affordability to Medicine... <span
+					class="font-semibold"
+				>
+					as life is precious.
+				</span>
+			</h1>
+			<p class="text-base text-gray-600 w-[40%]">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod .do eiusmod .do eiusmod. Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit, sed do eiusmod .do eiusmod .do
+				eiusmod .
 			</p>
-			<a href="/about" class="bg-white p-4 text-center text-black font-medium max-w-fit rounded-sm hover:bg-blue-200 ease-in duration-200">Know More</a>
+			<a
+				href="/about"
+				class="bg-white p-4 text-center text-black font-medium max-w-fit rounded-sm hover:bg-blue-200 ease-in duration-200"
+				>Know More</a
+			>
 		</div>
 	</div>
-	<div class="mt-20 mb-6 h-[auto] grid gap-24 grid-cols-2 grid-rows-2 justify-between items-center content-center justify-items-center">
+	<div
+		class="mt-20 mb-6 h-[auto] grid gap-24 grid-cols-2 grid-rows-2 justify-between items-center content-center justify-items-center"
+	>
 		<div class=`flex bg-[#116A7B] h-[40vh] w-[80vh] rounded-sm`>
-			<div class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4">
+			<div
+				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
+			>
 				<h2 class="text-lg font-medium">A True Partnership</h2>
-				<p class="text-base font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit.</p>
-			<a href=`{$link}` class="bg-transparent px-5 py-3 border border-white  text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black  ease-in duration-200">Know More</a>
+				<p class="text-base font-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					dolor sit amet consectetur adipisicing elit.
+				</p>
+				<a
+					href=`{$link}`
+					class="bg-transparent px-5 py-3 border border-white text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black ease-in duration-200"
+					>Know More</a
+				>
 			</div>
-			<img class="w-[50%]  object-cover" src=`https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80` alt="">
+			<img
+				class="w-[50%] object-cover"
+				src=`https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80`
+				alt=""
+			/>
 		</div>
 
 		<div class=`flex bg-[#848239] h-[40vh] w-[80vh] rounded-sm`>
-			<div class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4">
+			<div
+				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
+			>
 				<h2 class="text-lg font-medium">Social Responsibility</h2>
-				<p class="text-base font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit.</p>
-			<a href=`{$link}` class="bg-transparent px-5 py-3 border border-white  text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black  ease-in duration-200">Know More</a>
+				<p class="text-base font-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					dolor sit amet consectetur adipisicing elit.
+				</p>
+				<a
+					href=`{$link}`
+					class="bg-transparent px-5 py-3 border border-white text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black ease-in duration-200"
+					>Know More</a
+				>
 			</div>
-			<img class="w-[50%]  object-cover" src=`https://images.unsplash.com/photo-1666886573202-559f2e5b5194?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80` alt="">
+			<img
+				class="w-[50%] object-cover"
+				src=`https://images.unsplash.com/photo-1666886573202-559f2e5b5194?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80`
+				alt=""
+			/>
 		</div>
 		<div class=`flex bg-[#6B4522] h-[40vh] w-[80vh] rounded-sm`>
-			<div class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4">
+			<div
+				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
+			>
 				<h2 class="text-lg font-medium">Creating Value</h2>
-				<p class="text-base font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit.</p>
-			<a href=`{$link}` class="bg-transparent px-5 py-3 border border-white  text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black  ease-in duration-200">Know More</a>
+				<p class="text-base font-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					dolor sit amet consectetur adipisicing elit.
+				</p>
+				<a
+					href=`{$link}`
+					class="bg-transparent px-5 py-3 border border-white text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black ease-in duration-200"
+					>Know More</a
+				>
 			</div>
-			<img class="w-[50%]  object-cover" src=`https://images.unsplash.com/photo-1505455184862-554165e5f6ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80` alt="">
+			<img
+				class="w-[50%] object-cover"
+				src=`https://images.unsplash.com/photo-1505455184862-554165e5f6ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80`
+				alt=""
+			/>
 		</div>
 		<div class=`flex bg-[#5F2161] h-[40vh] w-[80vh] rounded-sm`>
-			<div class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4">
+			<div
+				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
+			>
 				<h2 class="text-lg font-medium">Accessible Innovation</h2>
-				<p class="text-base font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit.</p>
-			<a href=`{$link}` class="bg-transparent px-5 py-3 border border-white  text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black  ease-in duration-200">Know More</a>
+				<p class="text-base font-normal">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					dolor sit amet consectetur adipisicing elit.
+				</p>
+				<a
+					href=`{$link}`
+					class="bg-transparent px-5 py-3 border border-white text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black ease-in duration-200"
+					>Know More</a
+				>
 			</div>
-			<img class="w-[50%]  object-cover" src=`https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80` alt="">
+			<img
+				class="w-[50%] object-cover"
+				src=`https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80`
+				alt=""
+			/>
 		</div>
-
-
 	</div>
-	<div class="py-10 px-10 bg-[#116A7B] w-full flex justify-between items-center">
+	<div
+		class="py-10 px-10 bg-[#116A7B] w-full flex justify-between items-center"
+	>
 		<div class="flex gap-5 items-center justify-center">
-			<img src="/Vectorbanner.png" alt="" class="h-10">
+			<img src="/Vectorbanner.png" alt="" class="h-10" />
 			<div class="text-white">
 				<h1 class="text-2xl">Bringing Affordability to Medicine</h1>
-				<p class="text-md">Reach Out to <span class="font-semibold"> Andromeda Pharma  </span>Today!</p>
+				<p class="text-md">
+					Reach Out to <span class="font-semibold">
+						Andromeda Pharma
+					</span>Today!
+				</p>
 			</div>
 		</div>
-	<a href="/contact" class="bg-transparent text-center px-5 py-3 border border-white text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black  ease-in duration-200">Contact Us</a>
-
+		<a
+			href="/contact"
+			class="bg-transparent text-center px-5 py-3 border border-white text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black ease-in duration-200"
+			>Contact Us</a
+		>
 	</div>
-
 </Layout>
