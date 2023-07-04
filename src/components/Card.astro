@@ -2,62 +2,19 @@
 export interface Props {
 	title: string;
 	body: string;
-	href: string;
+	link: string;
+	color: string;
+	image: string;
 }
 
-const { href, title, body } = Astro.props;
+const { link, title, body, color, image } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 0.25rem;
-		background-color: white;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 0.6rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-	}
-
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: 1rem 1.3rem;
-		border-radius: 0.35rem;
-		color: #111;
-		background-color: white;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-		color: #444;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
-	}
-</style>
+<div class=`flex bg-[${color}] h-[40vh] w-[80vh] rounded-sm`>
+	<div class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4">
+		<h2 class="text-lg font-medium">{title}</h2>
+		<p class="text-base font-normal ">{body}</p>
+	<a href=`{$link}` class="bg-transparent px-5 py-3 border border-white  text-center text-white font-medium max-w-fit rounded-md hover:bg-white hover:text-black  ease-in duration-200">Know More</a>
+	</div>
+	<img class="w-[50%]  object-cover" src=`${image}` alt="">
+</div>
