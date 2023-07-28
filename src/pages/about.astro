@@ -5,29 +5,33 @@ import Card from "../components/Card.astro";
 
 <Layout title="Andromeda Pharma">
     <div class="relative">
-        <img
-            src="/aboutImg.png"
-            alt="main-hero-image"
-            class="h-[90vh] w-full object-cover"
-        />
-        <div
-            class="hero-text absolute top-[46%] translate-y-[-50%] p-10 flex flex-col gap-4"
-        >
-            <h1 class="text-4xl w-[45%] text-gray-800 leading-snug">
-                Advancing Health, Enriching Lives. <span class="font-semibold">
-                    Andromeda Pharma
-                </span>, Bringing Affordability to Medicine
-            </h1>
-            <p class="text-base text-gray-600 w-[40%]">
-                We are a pharmaceutical company dedicated to making healthcare accessible for all. We prioritize affordability, developing innovative medicines and treatments that empower individuals to lead healthier lives. 
-            </p>
-            <a
-                href="/about"
-                class="bg-white p-4 text-center text-black font-medium max-w-fit rounded-sm hover:bg-blue-200 ease-in duration-200"
-                >Know More</a
-            >
-        </div>
-    </div>
+		<img
+			src="/aboutImg.png"
+			alt="main-hero-image"
+			class="h-[60vh] md:h-[90vh] w-full object-cover"
+		/>
+		<div
+			class="hero-text absolute top-[50%] md:top-[46%] translate-y-[-50%] p-10 flex flex-col gap-4"
+		>
+			<h1 class="text-xl md:text-4xl w-[95%] lg:w-[45%]  text-gray-800 leading-snug">
+				Advancing Health, Enriching Lives. <span class="font-semibold">
+					Andromeda Pharma
+				</span>, Bringing Affordability to Medicine... <span
+					class="font-semibold"
+				>
+					as life is precious.
+				</span>
+			</h1>
+			<p class="text-base text-gray-600 w-[80%] md:w-[40%]">
+   				We are a pharmaceutical company dedicated to making healthcare accessible for all. We prioritize affordability, developing innovative medicines and treatments that empower individuals to lead healthier lives. 
+			</p>
+			<a
+				href="/about"
+				class="bg-white p-4 text-center text-black font-medium max-w-fit rounded-sm hover:bg-blue-200 ease-in duration-200"
+				>Know More</a
+			>
+		</div>
+	</div>
     <div
         class="text-left flex flex-col gap-11 my-[10vh] w-[90%] mx-auto text-gray-700"
     >
@@ -49,9 +53,9 @@ import Card from "../components/Card.astro";
         </p>
     </div>
     <h2 class="text-center text-3xl text-gray-700 font-bold">Our Values</h2>
-    <div class="grid grid-cols-3 grid-rows-2 items-center justify-center justify-items-center gap-11 my-[10vh] w-[90%] mx-auto text-gray-700">
+    <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 items-center justify-center justify-items-center gap-11 my-[10vh] w-[90%] mx-auto text-gray-700">
         <div
-            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[20vw]"
+            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[90%] md:w-[20vw]"
         >
             <img src="/people.png" alt="" class="h-10 w-10"/>
             <h2 class="text-xl font-semibold">People First</h2>
@@ -60,7 +64,7 @@ import Card from "../components/Card.astro";
             </p>
         </div>
         <div
-            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[20vw]"
+            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5  w-[90%] md:w-[20vw]"
         >
             <img src="/people.png" alt="" class="h-10 w-10"/>
             <h2 class="text-xl font-semibold">People First</h2>
@@ -69,7 +73,7 @@ import Card from "../components/Card.astro";
             </p>
         </div>
         <div
-            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[20vw]"
+            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5  w-[90%] md:w-[20vw]"
         >
             <img src="/people.png" alt="" class="h-10 w-10"/>
             <h2 class="text-xl font-semibold">People First</h2>
@@ -78,7 +82,7 @@ import Card from "../components/Card.astro";
             </p>
         </div>
         <div
-            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[20vw]"
+            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[90%] md:w-[20vw]"
         >
             <img src="/people.png" alt="" class="h-10 w-10"/>
             <h2 class="text-xl font-semibold">People First</h2>
@@ -87,7 +91,7 @@ import Card from "../components/Card.astro";
             </p>
         </div>
         <div
-            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[20vw]"
+            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[90%] md:w-[20vw]"
         >
             <img src="/people.png" alt="" class="h-10 w-10"/>
             <h2 class="text-xl font-semibold">People First</h2>
@@ -96,7 +100,7 @@ import Card from "../components/Card.astro";
             </p>
         </div>
         <div
-            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5 w-[20vw]"
+            class="about-card flex flex-col gap-4 bg-[#ECECEC] shadow-md p-5  w-[90%] md:w-[20vw]"
         >
             <img src="/people.png" alt="" class="h-10 w-10"/>
             <h2 class="text-xl font-semibold">People First</h2>

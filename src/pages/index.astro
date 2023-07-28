@@ -8,12 +8,12 @@ import Card from "../components/Card.astro";
 		<img
 			src="/main.png"
 			alt="main-hero-image"
-			class="h-[90vh] w-full object-cover"
+			class="h-[60vh] md:h-[90vh] w-full object-cover"
 		/>
 		<div
-			class="hero-text absolute top-[46%] translate-y-[-50%] p-10 flex flex-col gap-4"
+			class="hero-text absolute top-[50%] md:top-[46%] translate-y-[-50%] p-10 flex flex-col gap-4"
 		>
-			<h1 class="text-4xl w-[45%] text-gray-800 leading-snug">
+			<h1 class="text-xl md:text-4xl w-[95%] lg:w-[45%]  text-gray-800 leading-snug">
 				Advancing Health, Enriching Lives. <span class="font-semibold">
 					Andromeda Pharma
 				</span>, Bringing Affordability to Medicine... <span
@@ -22,7 +22,7 @@ import Card from "../components/Card.astro";
 					as life is precious.
 				</span>
 			</h1>
-			<p class="text-base text-gray-600 w-[40%]">
+			<p class="text-base text-gray-600 w-[80%] md:w-[40%]">
    				We are a pharmaceutical company dedicated to making healthcare accessible for all. We prioritize affordability, developing innovative medicines and treatments that empower individuals to lead healthier lives. 
 			</p>
 			<a
@@ -35,7 +35,7 @@ import Card from "../components/Card.astro";
 	<div
 		class="md:grid-cols-1 lg:grid-cols-2 grid-cols-1 grid-rows-1 mt-20 mb-6 h-[auto] grid gap-24  lg:grid-rows-2 justify-between items-center content-center justify-items-center "
 	>
-		<div class=`flex bg-[#116A7B] h-[40vh] w-[80vh] rounded-sm`>
+		<div class=`flex bg-[#116A7B] h-[auto] md:h-[40vh] w-[90%] md:w-[80vh] rounded-sm`>
 			<div
 				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
 			>
@@ -57,7 +57,7 @@ import Card from "../components/Card.astro";
 			/>
 		</div>
 
-		<div class=`flex bg-[#848239] h-[40vh] w-[80vh] rounded-sm`>
+		<div class=`flex bg-[#848239] h-[auto] md:h-[40vh] w-[90%] md:w-[80vh] rounded-sm`>
 			<div
 				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
 			>
@@ -78,7 +78,7 @@ import Card from "../components/Card.astro";
 				alt=""
 			/>
 		</div>
-		<div class=`flex bg-[#6B4522] h-[40vh] w-[80vh] rounded-sm`>
+		<div class=`flex bg-[#6B4522] h-[auto] md:h-[40vh] w-[90%] md:w-[80vh] rounded-sm`>
 			<div
 				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
 			>
@@ -99,7 +99,7 @@ import Card from "../components/Card.astro";
 				alt=""
 			/>
 		</div>
-		<div class=`flex bg-[#5F2161] h-[40vh] w-[80vh] rounded-sm`>
+		<div class=`flex bg-[#5F2161] h-[auto] md:h-[40vh] w-[90%] md:w-[80vh] rounded-sm`>
 			<div
 				class="card-text w-[50%] p-5 text-[#e9e9e9] flex flex-col gap-4"
 			>
